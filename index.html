@@ -1,0 +1,89 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Visualization Dashboard</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- PapaParse Library for CSV -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Data Visualization Dashboard</h1>
+        <p>Sales Data Analysis using Kaggle Dataset</p>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main>
+
+        <!-- Summary Cards -->
+        <section class="summary">
+
+            <div class="card">
+                <h3>Total Sales</h3>
+                <p id="totalSales">$0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Profit</h3>
+                <p id="totalProfit">$0</p>
+            </div>
+
+            <div class="card">
+                <h3>Total Orders</h3>
+                <p id="totalOrders">0</p>
+            </div>
+
+        </section>
+
+        <!-- Charts Section -->
+        <section class="charts">
+
+            <!-- Category-wise Sales -->
+            <div class="chart-box">
+                <h2>Category-wise Sales</h2>
+                <canvas id="barChart"></canvas>
+            </div>
+
+            <!-- Region-wise Sales -->
+            <div class="chart-box">
+                <h2>Region-wise Sales</h2>
+                <canvas id="pieChart"></canvas>
+            </div>
+
+            <!-- Monthly Sales -->
+            <div class="chart-box">
+                <h2>Monthly Sales Analysis</h2>
+                <canvas id="lineChart"></canvas>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Data Visualization Project | Created using HTML, CSS and JavaScript</p>
+        <p>Dataset Source: Kaggle - Sample Superstore</p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>
